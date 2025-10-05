@@ -1,0 +1,6 @@
+setup.py
+reassemblenet.egg-info/PKG-INFO
+reassemblenet.egg-info/SOURCES.txt
+reassemblenet.egg-info/dependency_links.txt
+reassemblenet.egg-info/requires.txt
+reassemblenet.egg-info/top_level.txt
