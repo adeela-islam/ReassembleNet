@@ -13,6 +13,12 @@ The task of reassembly is a significant challenge across multiple domains, inclu
   <img src="https://github.com/adeela-islam/ReassembleNet/blob/main/docs/method.png" width="1000"/>
 </p>
 
+### Evaluation Metrics
+The repository includes evaluation metrics to assess puzzle-solving performance. These metrics account for:
+- **Q_pos**: It scores the shared areas/volume between ground truth fragments' pose (translation and rotation) and the solution given by the evaluated methods.
+- **RMSE**: Root Mean Square Error (RMSE) for both translation in millimeters (mm) and rotation in degrees(◦) computed relatively with respect to the ground truth.
+
+These metrics provide a comprehensive evaluation framework for the quality of puzzle-solving solutions.
 ### Installation
 
 ```
