@@ -1,7 +1,7 @@
 # ReassembleNet: Learnable Keypoints and Diffusion for 2D Fresco Reconstruction
 
 This repository contains the official implementation of our paper:
-[ICCV], 2025  
+[ICCV, 2025]  
 [Paper link (arXiv/DOI)](https://arxiv.org/pdf/2505.21117)
 
 ---
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### 📊 Dataset Preparation
+### Dataset Preparation
 ```
 cd scripts
 python process_data.py
