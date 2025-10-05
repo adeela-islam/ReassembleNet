@@ -15,11 +15,65 @@ The task of reassembly is a significant challenge across multiple domains, inclu
 
 ### Installation
 
-```bash
+```
 pip install -r requirements.txt
 pip install -e .
-exit
+```
 
 ### 📊 Dataset Preparation
-```bash
+```
 cd scripts
+python process_data.py
+```
+
+
+### For Training
+```
+torchrun --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr='localhost' --master_port=30000 train.py \
+    --mode 'train' \
+    --kp_path 'model_kp.pth' \
+    --batch_size 1 \
+    --epochs 5 \
+    --diffusion_steps 600 \
+    --exp_name 'Exp_RePAIR' \
+    --dataset 'repair' \
+    --dataset_path 'RePAIR_dataset/' \
+    --transfer_learning False \
+    --loader_num_workers 8 \
+    --use_geometry_global_local_texture True \
+    --use_learnable_kp_selection True
+```
+
+### For Testing
+```
+torchrun --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr='localhost' --master_port=30000 train.py \
+    --mode 'test' \
+    --kp_path 'model_kp.pth' \
+    --batch_size 1 \
+    --epochs 5 \
+    --diffusion_steps 600 \
+    --exp_name 'Exp_RePAIR' \
+    --dataset 'repair' \
+    --dataset_path 'RePAIR_dataset/' \
+    --transfer_learning False \
+    --loader_num_workers 8 \
+    --use_geometry_global_local_texture True \
+    --use_learnable_kp_selection True
+```
+
+
+### Citation
+
+
+```bibtex
+@article{islam2025reassemblenet,
+  title={ReassembleNet: Learnable Keypoints and Diffusion for 2D Fresco Reconstruction},
+  author={Islam, Adeela and Fiorini, Stefano and James, Stuart and Morerio, Pietro and Del Bue, Alessio},
+  booktitle = {International Conference on Computer Vision (ICCV)}
+  year = {2025}
+}
+```
+
+
+
+
