@@ -18,6 +18,7 @@ The task of reassembly is a significant challenge across multiple domains, inclu
 ```bash
 pip install -r requirements.txt
 pip install -e .
+exit
 
 ### 📊 Dataset Preparation
 ```bash
