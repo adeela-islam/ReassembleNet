@@ -13,5 +13,12 @@ The task of reassembly is a significant challenge across multiple domains, inclu
   <img src="https://github.com/adeela-islam/ReassembleNet/blob/main/docs/method.png" width="1000"/>
 </p>
 
+### Installation
 
+```bash
+pip install -r requirements.txt
+pip install -e .
 
+### 📊 Dataset Preparation
+```bash
+cd scripts
