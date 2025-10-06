@@ -39,7 +39,7 @@ torchrun --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr='localhost' -
     --mode 'train' \
     --kp_path 'model_kp.pth' \
     --batch_size 1 \
-    --epochs 5 \
+    --epochs 50000 \
     --diffusion_steps 600 \
     --exp_name 'Exp_RePAIR' \
     --dataset 'repair' \
@@ -56,7 +56,7 @@ torchrun --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr='localhost' -
     --mode 'test' \
     --kp_path 'model_kp.pth' \
     --batch_size 1 \
-    --epochs 5 \
+    --epochs 50000 \
     --diffusion_steps 600 \
     --exp_name 'Exp_RePAIR' \
     --dataset 'repair' \
