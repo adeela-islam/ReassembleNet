@@ -35,7 +35,7 @@ python process_data.py
 
 ### For Training
 ```
-torchrun --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr='localhost' --master_port=30000 train.py \
+torchrun --nproc_per_node=4 --nnodes=1 --node_rank=0 --master_addr='localhost' --master_port=30000 train.py \
     --mode 'train' \
     --kp_path 'model_kp.pth' \
     --batch_size 4 \
@@ -52,7 +52,7 @@ torchrun --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr='localhost' -
 
 ### For Testing
 ```
-torchrun --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr='localhost' --master_port=30000 train.py \
+torchrun --nproc_per_node=4 --nnodes=1 --node_rank=0 --master_addr='localhost' --master_port=30000 train.py \
     --mode 'test' \
     --kp_path 'model_kp.pth' \
     --batch_size 4 \
