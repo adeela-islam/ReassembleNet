@@ -26,6 +26,10 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+### Semi-synthetic dataset
+Please download it [here](https://drive.google.com/drive/folders/1tflCUoct63Zhzt8dWs37vtfnphOqgReB?usp=sharing)
+
+
 ### Dataset Preparation
 ```
 cd scripts
